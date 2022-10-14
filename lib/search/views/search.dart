@@ -1,9 +1,8 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:hackathon/common.dart';
-import 'package:hackathon/widget/textfield.dart';
 
+import '../../config/navigation.dart';
+import '../../details/views/details_view.dart';
 import '../models/hospital.dart';
 
 class searchPage extends StatefulWidget {
@@ -68,6 +67,9 @@ class _searchPageState extends State<searchPage> {
               itemBuilder: (context, index) {
                 final hopital = hopitals[index];
                 return ListTile(
+                  onTap: () {
+                    NavigateToNextPage(context, const DetailsViewScreen());
+                  },
                   leading: Image.asset(
                     hopital.imgpath,
                     fit: BoxFit.cover,
