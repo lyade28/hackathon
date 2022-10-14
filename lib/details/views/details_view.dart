@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hackathon/common.dart';
-import 'package:hackathon/config/navigation.dart';
-import 'package:hackathon/localisation/views/map.dart';
+import 'package:hackathon/localisation/views/map_utils.dart';
 
 class DetailsViewScreen extends StatefulWidget {
   const DetailsViewScreen({Key? key}) : super(key: key);
@@ -362,7 +361,7 @@ class _DetailsViewScreenState extends State<DetailsViewScreen> {
           height: 50,
           child: ElevatedButton(
             onPressed: () {
-              NavigateToNextPage(context, const MapPage());
+              MapUtils.openMap(14.6573471, -17.4367247);
             },
             style: TextButton.styleFrom(
               backgroundColor: Colors.white.withOpacity(.9),
