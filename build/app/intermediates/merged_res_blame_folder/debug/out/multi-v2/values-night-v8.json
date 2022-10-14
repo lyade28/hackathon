@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/libasse/Documents/hackathon/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/Users/libasse/Desktop/hackathon/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/libasse/Documents/hackathon/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/libasse/Desktop/hackathon/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

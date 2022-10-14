@@ -1,4 +1,4 @@
-#Wed Oct 05 16:26:21 GMT 2022
-base.0=/Users/libasse/Documents/hackathon/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Fri Oct 14 11:11:24 GMT 2022
+base.0=/Users/libasse/Desktop/hackathon/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
