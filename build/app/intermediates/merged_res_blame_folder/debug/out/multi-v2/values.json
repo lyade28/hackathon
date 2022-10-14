@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/lamine/Documents/FLUTTER/health-tech/hackathon/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+=======
+            "outputFile": "/Users/libasse/Desktop/hackathon/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+>>>>>>> f2a4a6ba186aa692fbc64afb5d957cbed1fd86da
             "map": [
                 {
                     "source": "/Users/lamine/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/res/values/values.xml",
@@ -23,7 +27,30 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "/Users/lamine/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/res/values/values.xml",
+=======
+                    "source": "/Users/libasse/Desktop/hackathon/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "93,98",
+                        "startColumns": "4,4",
+                        "startOffsets": "5462,5770",
+                        "endLines": "97,100",
+                        "endColumns": "12,12",
+                        "endOffsets": "5765,5934"
+                    }
+                },
+                {
+                    "source": "/Users/libasse/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/res/values/values.xml",
+>>>>>>> f2a4a6ba186aa692fbc64afb5d957cbed1fd86da
                     "from": {
                         "startLines": "2,7,8,9,10,11,19,23,34,51",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",

@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Thu Oct 06 15:32:47 GMT 2022
 base.0=/Users/lamine/Documents/FLUTTER/health-tech/hackathon/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+=======
+#Fri Oct 14 11:11:24 GMT 2022
+base.0=/Users/libasse/Desktop/hackathon/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+>>>>>>> f2a4a6ba186aa692fbc64afb5d957cbed1fd86da
 renamed.0=classes.dex
 path.0=classes.dex

@@ -20,6 +20,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "bottom_navy_bar",
+      "rootUri": "file:///Users/lamine/flutter/.pub-cache/hosted/pub.dartlang.org/bottom_navy_bar-6.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "carousel_slider",
       "rootUri": "file:///Users/lamine/flutter/.pub-cache/hosted/pub.dartlang.org/carousel_slider-4.1.1",
       "packageUri": "lib/",
@@ -314,7 +320,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2022-10-06T12:20:41.593157Z",
+  "generated": "2022-10-14T11:24:03.483926Z",
   "generator": "pub",
   "generatorVersion": "2.18.2"
 }

@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/lamine/Documents/FLUTTER/health-tech/hackathon/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/lamine/Documents/FLUTTER/health-tech/hackathon/android/app/src/main/res/values-night/styles.xml",
+=======
+            "outputFile": "/Users/libasse/Desktop/hackathon/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/Users/libasse/Desktop/hackathon/android/app/src/main/res/values-night/styles.xml",
+>>>>>>> f2a4a6ba186aa692fbc64afb5d957cbed1fd86da
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

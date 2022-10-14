@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hackathon/home/views/home.dart';
+import 'package:hackathon/bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(),
-      home: Homepage(),
+      home: buttom_navrbar(),
     );
   }
 }

@@ -13,8 +13,13 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
+<<<<<<< HEAD
 15-->/Users/lamine/Documents/FLUTTER/health-tech/hackathon/android/app/src/debug/AndroidManifest.xml:7:5-66
 15-->/Users/lamine/Documents/FLUTTER/health-tech/hackathon/android/app/src/debug/AndroidManifest.xml:7:22-64
+=======
+15-->/Users/libasse/Desktop/hackathon/android/app/src/debug/AndroidManifest.xml:7:5-66
+15-->/Users/libasse/Desktop/hackathon/android/app/src/debug/AndroidManifest.xml:7:22-64
+>>>>>>> f2a4a6ba186aa692fbc64afb5d957cbed1fd86da
 16
 17    <application
 18        android:name="android.app.Application"
