@@ -5,14 +5,14 @@ import '../../config/navigation.dart';
 import '../../details/views/details_view.dart';
 import '../models/hospital.dart';
 
-class searchPage extends StatefulWidget {
-  const searchPage({super.key});
+class SearchPage extends StatefulWidget {
+  const SearchPage({super.key});
 
   @override
-  State<searchPage> createState() => _searchPageState();
+  State<SearchPage> createState() => _SearchPageState();
 }
 
-class _searchPageState extends State<searchPage> {
+class _SearchPageState extends State<SearchPage> {
   final controller = TextEditingController();
   List<Hospital> hopitals = allHospital;
   @override
@@ -21,7 +21,7 @@ class _searchPageState extends State<searchPage> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Pcol,
-          title: Text('Rechercher un service '),
+          title: const Text('Rechercher un service '),
           centerTitle: true,
         ),
         body: Column(

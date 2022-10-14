@@ -5,7 +5,7 @@ import 'package:hackathon/config/navigation.dart';
 import 'package:hackathon/common.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:hackathon/search/views/search.dart';
+import '../../search/views/Search.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -80,7 +80,7 @@ class Homepage extends StatelessWidget {
                     height: 40,
                     child: ElevatedButton(
                       onPressed: () {
-                        NavigateToNextPage(context, searchPage());
+                        NavigateToNextPage(context, SearchPage());
                       },
                       style: TextButton.styleFrom(
                         backgroundColor: Colors.white,
