@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hackathon/common.dart';
 
-import '../../config/navigation.dart';
 import '../../details/views/details_view.dart';
 import '../models/hospital.dart';
 
@@ -15,6 +14,7 @@ class SearchPage extends StatefulWidget {
 class _SearchPageState extends State<SearchPage> {
   final controller = TextEditingController();
   List<Hospital> hopitals = allHospital;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -23,43 +23,43 @@ class _SearchPageState extends State<SearchPage> {
           backgroundColor: Pcol,
           title: const Text('Rechercher un service '),
           centerTitle: true,
+          bottom: PreferredSize(
+            preferredSize: const Size(1, 65),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 50,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        color: Colors.white),
+                    padding: const EdgeInsets.symmetric(horizontal: 8),
+                    width: MediaQuery.of(context).size.width,
+                    child: TextFormField(
+                      onChanged: searchBook,
+                      controller: controller,
+                      decoration: const InputDecoration(
+                        border: OutlineInputBorder(
+                          borderSide: BorderSide.none,
+                        ),
+                        suffixIcon: Icon(
+                          Icons.search,
+                        ),
+                        hintText: 'Nom , établissement',
+                      ),
+                      keyboardType: TextInputType.text,
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
         ),
         body: Column(
           children: [
-            Container(
-              height: 60,
-              width: MediaQuery.of(context).size.width,
-              decoration: const BoxDecoration(
-                color: Colors.white,
-                boxShadow: [
-                  BoxShadow(
-                      color: Colors.black54,
-                      blurRadius: 15.0,
-                      offset: Offset(0.0, 0.50))
-                ],
-              ),
-              // child: Ctextfield(
-              //   controller: controller,
-              //   keyboardType: TextInputType.text,
-              //   hint: 'Nom , établissement',
-              //   sufix: const Icon(
-              //     Icons.search,
-              //   ),
-              // ),
-              child: TextFormField(
-                onChanged: searchBook,
-                controller: controller,
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(
-                    borderSide: BorderSide.none,
-                  ),
-                  suffixIcon: Icon(
-                    Icons.search,
-                  ),
-                  hintText: 'Nom , établissement',
-                ),
-                keyboardType: TextInputType.text,
-              ),
+            const SizedBox(
+              height: 10,
             ),
             Expanded(
                 child: ListView.builder(
@@ -67,21 +67,36 @@ class _SearchPageState extends State<SearchPage> {
               itemBuilder: (context, index) {
                 final hopital = hopitals[index];
                 return ListTile(
-                  onTap: () {
-                    NavigateToNextPage(context, const DetailsViewScreen());
-                  },
-                  leading: Image.asset(
-                    hopital.imgpath,
-                    fit: BoxFit.cover,
-                    width: 50,
-                    height: 50,
-                  ),
-                  title: Text(hopital.nom),
-                  // subtitle: Text(hopital.services.map((e) {
-                  //   // ignore: avoid_print
-                  //   print(e)
-                  // }).toList();)
-                );
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const DetailsViewScreen(),
+                          // Pass the arguments as part of the RouteSettings. The
+                          // DetailScreen reads the arguments from these settings.
+                          settings: RouteSettings(
+                            arguments: hopitals[index],
+                          ),
+                        ),
+                      );
+                    },
+                    leading: Image.asset(
+                      hopital.imgpath,
+                      fit: BoxFit.cover,
+                      width: 50,
+                      height: 50,
+                    ),
+                    title: Text(hopital.nom),
+                    subtitle: Wrap(spacing: 10.0, children: [
+                      Text(
+                        hopital.services[index].nom,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ]));
+
+                //  spacing: 10.0,
+                // runSpacing: 5.0,
               },
             ))
           ],
@@ -90,6 +105,17 @@ class _SearchPageState extends State<SearchPage> {
     );
   }
 
+// Widget getList() {
+//  List<Hospital> list = allHospital;
+//   ListView myList = new ListView.builder(
+//     itemCount: list.length,
+//     itemBuilder: (context, index) {
+//     return new ListTile(
+//       title: new Text(list[index]),
+//     );
+//   });
+//   return myList;
+// }
   void searchBook(String query) {
     final suggestions = allHospital.where((hopital) {
       final hospitalTitle = hopital.nom.toLowerCase();

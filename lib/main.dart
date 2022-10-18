@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hackathon/bottom_nav_bar.dart';
+import 'package:hackathon/begin/onBoarding_screen.dart';
+// import 'package:hackathon/bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(),
-      home: buttom_navrbar(),
+      // home: buttom_navrbar(),
+      home: const OnBoardingScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

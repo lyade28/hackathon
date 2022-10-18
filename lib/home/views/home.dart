@@ -31,7 +31,7 @@ class Homepage extends StatelessWidget {
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 20),
               width: w,
-              height: h / 2 - 30,
+              height: h / 2 - 10,
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
                     colors: [
@@ -49,16 +49,9 @@ class Homepage extends StatelessWidget {
               child: Column(
                 children: [
                   Center(
-                    child: Text(
-                      'LOGO',
-                      style: GoogleFonts.poppins(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Scol),
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 19,
+                    child: Image.asset(
+                        "assets/logo-e-service-sante_logo-e-service-sante-bg-tx-white.png",
+                        width: 150),
                   ),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -73,14 +66,14 @@ class Homepage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 30,
+                    height: 10,
                   ),
                   SizedBox(
                     width: MediaQuery.of(context).size.width / 2 + 20,
                     height: 40,
                     child: ElevatedButton(
                       onPressed: () {
-                        NavigateToNextPage(context, SearchPage());
+                        NavigateToNextPage(context, const SearchPage());
                       },
                       style: TextButton.styleFrom(
                         backgroundColor: Colors.white,
@@ -97,7 +90,7 @@ class Homepage extends StatelessWidget {
                             'RECHERCHER',
                             style: GoogleFonts.poppins(
                                 color: Pcol, fontWeight: FontWeight.w600),
-                          )
+                          ),
                         ],
                       ),
                     ),
@@ -105,79 +98,139 @@ class Homepage extends StatelessWidget {
                   const SizedBox(
                     height: 30,
                   ),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 10),
-                          height: 100,
-                          width: w - 80,
-                          decoration: BoxDecoration(
-                              color: Color(0xff27BEDB),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Row(
-                            children: [
-                              Expanded(
-                                child: Text(
-                                  'Lorem ipsum dolor sit  consectetur adipiscing',
-                                  style: GoogleFonts.poppins(
-                                    color: Colors.white,
-                                  ),
-                                ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Pcol.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset: const Offset(
+                                    0, 3), // changes position of shadow
                               ),
-                              Container(
-                                  height: 80,
-                                  width: 90,
-                                  decoration: const BoxDecoration()),
                             ],
-                          ),
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(4)),
+                        width: w / 3.5,
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 40,
+                              width: w,
+                              decoration: const BoxDecoration(
+                                  color: Colors.white,
+                                  image: DecorationImage(
+                                      image: Svg('assets/hospital.svg'))),
+                            ),
+                            const SizedBox(
+                              height: 4,
+                            ),
+                            const Text('23 '),
+                            const Text(
+                              'Hôpitaux',
+                              style: TextStyle(
+                                  color: Scol,
+                                  fontWeight: FontWeight.w700,
+                                  letterSpacing: 0.8),
+                            )
+                          ],
                         ),
-                        const SizedBox(
-                          width: 9,
-                        ),
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 10),
-                          height: 100,
-                          width: w - 80,
-                          decoration: BoxDecoration(
-                              color: const Color(0xffCD5258),
-                              borderRadius: BorderRadius.circular(8)),
-                          child: Row(
-                            children: [
-                              Expanded(
-                                child: Text(
-                                  'Lorem ipsum dolor sit  consectetur adipiscing',
-                                  style: GoogleFonts.poppins(
-                                    color: Colors.white,
-                                  ),
-                                ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Pcol.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset: const Offset(
+                                    0, 3), // changes position of shadow
                               ),
-                              Container(
-                                  height: 80,
-                                  width: 90,
-                                  decoration: const BoxDecoration(
-                                      // image: DecorationImage(
-                                      //     image: Svg('assets/peti_iconsvg'))
-                                      // image: DecorationImage(
-                                      //     image: AssetImage('assets/petit.png')),
-                                      )),
                             ],
-                          ),
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(4)),
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        width: w / 3.5,
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 40,
+                              width: w,
+                              decoration: const BoxDecoration(
+                                  color: Colors.white,
+                                  image: DecorationImage(
+                                      image: Svg('assets/clinique.svg'))),
+                            ),
+                            const SizedBox(
+                              height: 4,
+                            ),
+                            const Text('39 '),
+                            const Text(
+                              'Cliniques',
+                              style: TextStyle(
+                                  color: Scol,
+                                  fontWeight: FontWeight.w700,
+                                  letterSpacing: 0.8),
+                            )
+                          ],
                         ),
-                      ],
-                    ),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.symmetric(vertical: 12),
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Pcol.withOpacity(0.5),
+                                spreadRadius: 5,
+                                blurRadius: 7,
+                                offset: const Offset(
+                                    0, 3), // changes position of shadow
+                              ),
+                            ],
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(4)),
+                        // height: 100,
+                        width: w / 3.5,
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 40,
+                              width: w,
+                              decoration: const BoxDecoration(
+                                  color: Colors.white,
+                                  image: DecorationImage(
+                                      image: Svg('assets/dispensaire.svg'))),
+                            ),
+                            const SizedBox(
+                              height: 4,
+                            ),
+                            const Text('27 '),
+                            const Text(
+                              'Dispensaires',
+                              style: TextStyle(
+                                  color: Scol,
+                                  fontWeight: FontWeight.w700,
+                                  letterSpacing: 0.8),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
                   )
                 ],
               ),
             ),
             Container(
-              padding: EdgeInsets.symmetric(vertical: 20),
+              padding: const EdgeInsets.symmetric(vertical: 20),
               child: Column(
                 children: [
                   Center(
                     child: Text(
-                      'Logo vous permet',
+                      'E-Service Santé vous permet',
                       style: GoogleFonts.poppins(
                         fontSize: 22,
                         fontWeight: FontWeight.w600,
