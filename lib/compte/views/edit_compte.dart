@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hackathon/common.dart';
 
@@ -117,24 +116,24 @@ class _EditState extends State<Edit> {
                       color: myFocusNode.hasFocus ? Pcol : Colors.black),
                 ),
               ),
-              SizedBox(
-                height: 20,
+              const SizedBox(
+                height: 30,
               ),
               SizedBox(
                   width: double.infinity,
                   height: 50,
                   child: ElevatedButton(
                     onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Pcol,
+                      elevation: 0,
+                    ),
                     child: Text(
                       'Confirmer',
                       style: GoogleFonts.poppins(
                         fontSize: 15,
                         fontWeight: FontWeight.w600,
                       ),
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Pcol,
-                      elevation: 0,
                     ),
                   )),
             ],
