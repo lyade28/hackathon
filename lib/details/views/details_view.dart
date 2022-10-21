@@ -393,8 +393,8 @@ class _DetailsViewScreenState extends State<DetailsViewScreen> {
           height: 50,
           child: ElevatedButton(
             onPressed: () {
-              // MapUtils.openMap(14.6573471, -17.4367247);
-              NavigateToNextPage(context, const MapScreen());
+              MapUtils.openMap(14.6573471, -17.4367247);
+              // NavigateToNextPage(context, const MapScreen());
             },
             style: TextButton.styleFrom(
               backgroundColor: Colors.white.withOpacity(.9),
