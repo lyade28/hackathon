@@ -6,6 +6,7 @@ import 'package:hackathon/auth/views/register.dart';
 import 'package:hackathon/common.dart';
 import 'package:hackathon/config/navigation.dart';
 import 'package:hackathon/widget/button.dart';
+import 'package:hackathon/widget/components/button.dart';
 
 class RendezVousFormScreen extends StatefulWidget {
   const RendezVousFormScreen({Key? key}) : super(key: key);
@@ -162,86 +163,91 @@ class _RendezVousFormScreenState extends State<RendezVousFormScreen> {
                   const SizedBox(
                     height: 30,
                   ),
-                  buttonLarge(context, textButton: 'Confirmation',
+                  ButtonCustomLarge(
+                      foregroundColor:
+                          MaterialStateProperty.all<Color>(Colors.white),
+                      backgroundColor: MaterialStateProperty.all<Color>(Pcol),
+                      label: "Confirmation",
                       onPressed: () {
-                    showModalBottomSheet(
-                        context: context,
-                        builder: (context) => Container(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 32.0, vertical: 24.0),
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(100)),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Text(
-                                    'Confirmation',
-                                    style: GoogleFonts.poppins(
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                  const SizedBox(
-                                    height: 40,
-                                  ),
-                                  RichText(
-                                    textAlign: TextAlign.center,
-                                    text: const TextSpan(
-                                        text:
-                                            'Vous avez pris rendez-vous pour le',
-                                        style: TextStyle(
-                                            height: 1.5,
-                                            color: Colors.black,
-                                            fontSize: 18),
-                                        children: <TextSpan>[
-                                          TextSpan(
-                                            text: ' 03 juin 2022 à 09h30 ',
-                                            style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.w600,
-                                                fontSize: 18),
-                                          ),
-                                          TextSpan(
-                                            text: ' motif',
-                                            style: TextStyle(
-                                                color: Colors.black,
-                                                fontSize: 18),
-                                          ),
-                                          TextSpan(
-                                            text: ' Consultation simple',
-                                            style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.w600,
-                                                fontSize: 18),
-                                          )
-                                        ]),
-                                  ),
-                                  const SizedBox(
-                                    height: 30,
-                                  ),
-                                  Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
+                        showModalBottomSheet(
+                            context: context,
+                            builder: (context) => Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 32.0, vertical: 24.0),
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(100)),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      buttonMedium(context,
-                                          textButton: 'Confirmer',
-                                          onPressed: () {
-                                        NavigateToNextPage(
-                                            context, const RegisterScreen());
-                                      },
-                                          backgroundColor:
-                                              const Color(0xFF27BEDB)
-                                                  .withOpacity(.4)),
-                                      OutlinebuttonMedium(context,
-                                          textColor: Colors.red,
-                                          textButton: 'Annuler', onPressed: () {
-                                        Navigator.pop(context);
-                                      }, borderColor: Colors.red)
+                                      Text(
+                                        'Confirmation',
+                                        style: GoogleFonts.poppins(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                      const SizedBox(
+                                        height: 40,
+                                      ),
+                                      RichText(
+                                        textAlign: TextAlign.center,
+                                        text: const TextSpan(
+                                            text:
+                                                'Vous avez pris rendez-vous pour le',
+                                            style: TextStyle(
+                                                height: 1.5,
+                                                color: Colors.black,
+                                                fontSize: 18),
+                                            children: <TextSpan>[
+                                              TextSpan(
+                                                text: ' 03 juin 2022 à 09h30 ',
+                                                style: TextStyle(
+                                                    color: Colors.black,
+                                                    fontWeight: FontWeight.w600,
+                                                    fontSize: 18),
+                                              ),
+                                              TextSpan(
+                                                text: ' motif',
+                                                style: TextStyle(
+                                                    color: Colors.black,
+                                                    fontSize: 18),
+                                              ),
+                                              TextSpan(
+                                                text: ' Consultation simple',
+                                                style: TextStyle(
+                                                    color: Colors.black,
+                                                    fontWeight: FontWeight.w600,
+                                                    fontSize: 18),
+                                              )
+                                            ]),
+                                      ),
+                                      const SizedBox(
+                                        height: 30,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          buttonMedium(context,
+                                              textButton: 'Confirmer',
+                                              onPressed: () {
+                                            NavigateToNextPage(context,
+                                                const RegisterScreen());
+                                          },
+                                              backgroundColor:
+                                                  const Color(0xFF27BEDB)
+                                                      .withOpacity(.4)),
+                                          OutlinebuttonMedium(context,
+                                              textColor: Colors.red,
+                                              textButton: 'Annuler',
+                                              onPressed: () {
+                                            Navigator.pop(context);
+                                          }, borderColor: Colors.red)
+                                        ],
+                                      )
                                     ],
-                                  )
-                                ],
-                              ),
-                            ));
-                  }, backgroundColor: Pcol),
+                                  ),
+                                ));
+                      }),
                 ],
               ),
             ),

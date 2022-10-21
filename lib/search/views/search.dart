@@ -89,7 +89,8 @@ class _SearchPageState extends State<SearchPage> {
                     title: Text(hopital.nom),
                     subtitle: Wrap(spacing: 10.0, children: [
                       Text(
-                        hopital.services[index].nom,
+                        'Dentiste - Chirugie',
+                        // hopital.services[index].nom,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                       ),

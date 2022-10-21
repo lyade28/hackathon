@@ -15,14 +15,11 @@ class _RendezVousScreenState extends State<RendezVousScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Pcol,
-        title: const Text('Mes rendez-vous'),
-      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24),
         child: Center(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Icon(

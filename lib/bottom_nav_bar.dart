@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hackathon/common.dart';
 import 'package:hackathon/compte/views/compte_screen.dart';
 import 'package:hackathon/home/views/home.dart';
-import 'package:hackathon/rendez-vous/views/rendez_vous_screen.dart';
+import 'package:hackathon/rendez-vous/views/tabs.dart';
 
 class buttom_navrbar extends StatefulWidget {
   @override
@@ -11,11 +11,7 @@ class buttom_navrbar extends StatefulWidget {
 }
 
 class _buttom_navrbarState extends State<buttom_navrbar> {
-  List children = [
-    const Homepage(),
-    const RendezVousScreen(),
-    const CompteScreen()
-  ];
+  List children = [const Homepage(), const TabBarPage(), const CompteScreen()];
   int _currentIndex = 0;
 
   @override
