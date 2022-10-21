@@ -36,7 +36,7 @@ class _CompteScreenState extends State<CompteScreen> {
               width: 80,
               child: CircleAvatar(
                 backgroundImage: AssetImage(
-                  'assets/user.png',
+                  'assets/test.png',
                 ),
               ),
             ),

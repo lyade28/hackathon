@@ -38,7 +38,7 @@ class _EditState extends State<Edit> {
                 width: 80,
                 child: CircleAvatar(
                   backgroundImage: AssetImage(
-                    'assets/user.png',
+                    'assets/test.png',
                   ),
                 ),
               ),
@@ -51,6 +51,7 @@ class _EditState extends State<Edit> {
               TextFormField(
                 initialValue: 'Libasse YADE ',
                 decoration: InputDecoration(
+                  border: const OutlineInputBorder(),
                   hintText: 'Nom complet',
                   labelText: 'Nom complet',
                   fillColor: Pcol,
@@ -116,7 +117,26 @@ class _EditState extends State<Edit> {
                       color: myFocusNode.hasFocus ? Pcol : Colors.black),
                 ),
               ),
-              SizedBox()
+              SizedBox(
+                height: 20,
+              ),
+              SizedBox(
+                  width: double.infinity,
+                  height: 50,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Confirmer',
+                      style: GoogleFonts.poppins(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Pcol,
+                      elevation: 0,
+                    ),
+                  )),
             ],
           ),
         ),

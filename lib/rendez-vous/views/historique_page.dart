@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:hackathon/common.dart';
-import 'package:hackathon/rendez-vous/views/list.dart';
 
 class HistoriqueRendezVous extends StatefulWidget {
   const HistoriqueRendezVous({super.key});
@@ -66,7 +65,7 @@ class _HistoriqueRendezVousState extends State<HistoriqueRendezVous> {
                   .map((item) => Card(
                         shape: Border(left: BorderSide(color: Scol, width: 2)),
                         child: Container(
-                          padding: EdgeInsets.all(6),
+                          padding: EdgeInsets.all(9),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [

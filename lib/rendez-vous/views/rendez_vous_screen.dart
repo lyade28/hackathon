@@ -19,6 +19,7 @@ class _RendezVousScreenState extends State<RendezVousScreen> {
         padding: const EdgeInsets.symmetric(horizontal: 24),
         child: Center(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Icon(
