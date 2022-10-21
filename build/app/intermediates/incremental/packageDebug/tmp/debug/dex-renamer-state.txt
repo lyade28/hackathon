@@ -1,9 +1,16 @@
-<<<<<<< HEAD
-#Thu Oct 06 15:32:47 GMT 2022
-base.0=/Users/lamine/Documents/FLUTTER/health-tech/hackathon/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-=======
-#Fri Oct 14 11:11:24 GMT 2022
-base.0=/Users/libasse/Desktop/hackathon/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
->>>>>>> f2a4a6ba186aa692fbc64afb5d957cbed1fd86da
-renamed.0=classes.dex
+#Fri Oct 21 11:44:33 GMT 2022
+path.4=12/classes.dex
+path.3=1/classes.dex
+path.2=0/classes.dex
+path.1=0/classes.dex
 path.0=classes.dex
+base.4=/Users/lamine/Documents/FLUTTER/health-tech/hackathon/build/app/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
+base.3=/Users/lamine/Documents/FLUTTER/health-tech/hackathon/build/app/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+base.2=/Users/lamine/Documents/FLUTTER/health-tech/hackathon/build/app/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.1=/Users/lamine/Documents/FLUTTER/health-tech/hackathon/build/app/intermediates/dex/debug/mergeLibDexDebug/0/classes.dex
+base.0=/Users/lamine/Documents/FLUTTER/health-tech/hackathon/build/app/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+renamed.4=classes5.dex

@@ -1,11 +1,7 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
             "outputFile": "/Users/lamine/Documents/FLUTTER/health-tech/hackathon/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
-=======
-            "outputFile": "/Users/libasse/Desktop/hackathon/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml",
->>>>>>> f2a4a6ba186aa692fbc64afb5d957cbed1fd86da
             "map": [
                 {
                     "source": "/Users/lamine/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/res/values-en-rXC/values-en-rXC.xml",

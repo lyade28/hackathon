@@ -1,7 +1,9 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:hackathon/common.dart';
+import 'package:hackathon/compte/views/compte_screen.dart';
 import 'package:hackathon/home/views/home.dart';
+import 'package:hackathon/rendez-vous/views/rendez_vous_screen.dart';
 
 class buttom_navrbar extends StatefulWidget {
   @override
@@ -10,13 +12,9 @@ class buttom_navrbar extends StatefulWidget {
 
 class _buttom_navrbarState extends State<buttom_navrbar> {
   List children = [
-    Homepage(),
-    Container(
-      color: Colors.white,
-    ),
-    Container(
-      color: Colors.white,
-    ),
+    const Homepage(),
+    const RendezVousScreen(),
+    const CompteScreen()
   ];
   int _currentIndex = 0;
 
